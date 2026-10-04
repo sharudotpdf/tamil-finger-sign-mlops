@@ -1,0 +1,25 @@
+{
+  "project_root": "/Users/sharu/Documents/DBU/tamil-finger-sign-mlops",
+  "seed": 42,
+  "runtime": {
+    "python": "3.12.12",
+    "system": "Darwin",
+    "release": "25.5.0",
+    "machine": "arm64"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "mediapipe": "0.10.35",
+    "mlflow": "3.16.1",
+    "Pillow": "12.3.0",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "git": {
+    "commit": null,
+    "branch": "main",
+    "dirty": true
+  }
+}

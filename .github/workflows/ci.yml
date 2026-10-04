@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      PYTHONPATH: src
+      MPLBACKEND: Agg
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          else
+            python -m pip install \
+              numpy \
+              pandas \
+              Pillow \
+              scikit-learn \
+              joblib \
+              matplotlib \
+              ipython \
+              fastapi \
+              uvicorn \
+              httpx \
+              python-multipart
+          fi
+
+          python -m pip install pytest httpx
+
+      - name: Run unit and integration tests
+        run: python -m pytest -q
+
+      - name: Check FastAPI import
+        run: python -c "from app.demo_api import app; print('FastAPI import OK:', app.title)"

@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-28",
+  "test_command": "python -m pytest tests/test_tlfs23_data_features.py -q",
+  "result": "44 passed",
+  "tested_python": "3.13.5",
+  "tested_platform": "Linux",
+  "intended_project_python": "3.12.12",
+  "mediapipe_project_version": "0.10.35",
+  "tests_include": [
+    "Notebook JSON validation and compilation of every code cell",
+    "Sequential execution of all four notebooks on synthetic image files",
+    "Byte hashes, RGB pixel identity, corrupt files, cache re-use and changed input rejection",
+    "Cross-folder quarantine and deterministic canonical file selection",
+    "No invented numeric-folder mapping and explicit review gates",
+    "Previous exposure exclusion, grouped split separation and freeze consistency",
+    "Deterministic training-only augmentation",
+    "178-dimensional hand geometry; scale, translation and hand-order invariance",
+    "Detection failures retained as NaN, distinct from FIST and Background",
+    "Chunk re-use, feature row alignment and artifact hash verification"
+  ],
+  "not_tested": [
+    "Live TLFS23 original images",
+    "Native MediaPipe initialization or inference on macOS/Apple Silicon",
+    "Actual runtime or RAM use on the user Mac",
+    "Accuracy, coverage or improvements of any trained model",
+    "Complete original Table 1 folder-to-character verification"
+  ],
+  "integration_note": "Only the native detector/model-file checks were replaced by synthetic fixtures in the integration test. Actual file processing, augmentation, feature geometry, disk caches, notebook code and review/split logic executed."
+}

@@ -1,0 +1,6 @@
+{
+  "selection_sha256": "5f2dfb691c84aa8e835bd75396b669b6572b0069913522e3f1b3af691e5ee594",
+  "model_version": "20261003_190248_9c16aa_rf_augmented",
+  "split_sha256": "67a9cb3a9decd31e3385e7cd38a320ae4ac360b80ae186b45c92df685d6bc2c2",
+  "purpose": "final_holdout_evaluation"
+}

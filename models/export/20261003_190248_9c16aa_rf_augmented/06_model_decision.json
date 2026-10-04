@@ -1,0 +1,11 @@
+{
+  "model_version": "20261003_190248_9c16aa_rf_augmented",
+  "experiment": "rf_augmented",
+  "family": "random_forest",
+  "training_data": "original+mild_1",
+  "threshold": 0.5,
+  "validation_target_met": true,
+  "note": "Der Random Forest mit mild augmentierten Trainingsdaten wurde ausgewählt. Er erzielte auf der unveränderten Validation den höchsten End-to-End Macro-F1 (0.7725) sowie eine Accuracy von 0.9187 auf erfolgreich detektierten Zeichen. Die Augmentierung verbesserte den Random Forest leicht gegenüber dem Training nur auf Originaldaten. Ein Score-Threshold von 0.5 wurde gewählt, da damit eine Accuracy von 0.9560 unter den akzeptierten Zeichen bei einer Sign-Coverage von 0.6674 erreicht wurde. Die Background-False-Accept-Rate lag bei 0.0. Die End-to-End-Leistung wird weiterhin wesentlich durch fehlgeschlagene oder unvollständige Zwei-Hand-Detektionen begrenzt.",
+  "test_used_for_selection": false,
+  "selection_sha256": "5f2dfb691c84aa8e835bd75396b669b6572b0069913522e3f1b3af691e5ee594"
+}

@@ -1,0 +1,8 @@
+{
+  "README_Bildpruefung.md": "fdd388b466296fe7c6f55748a7af161e1a5aa24da4fcdaf6b25938ed2f707ef1",
+  "notebooks/03_duplicate_resolution_and_curation.ipynb": "bc48cacdc01fc5cd0991acac708d7c714532d6210cedd07a1f093c2ef4f0342b",
+  "notebooks/04_label_schema_and_split.ipynb": "90c51faf7f354bdaa5630bdd03a052713769f96aec47172d61cc4a4edd27414e",
+  "docs/VALIDIERUNG_Bildpruefung.json": "db3496914c746bc78028183dcbc94e9fd662d84b3dfe6b428a163596ec5f7208",
+  "tests/test_tlfs23_visual_review.py": "2841057b461a21fde7fd13914abc80ae41ff2aa23e903003ca01d4251eab9283",
+  "src/tlfs23/visual_review.py": "cc341370f834c0682dafa7ec47d830d54efefc89c852884ec31c7a95dd05298b"
+}

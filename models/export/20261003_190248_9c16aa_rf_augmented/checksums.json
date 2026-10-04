@@ -1,0 +1,15 @@
+{
+  "05_feature_decision.json": "2f188872f82d70caf3aaf7161edace49733cb95ab702e433fef56e42f8f7faae",
+  "requirements-snapshot.txt": "105752223b7ade22f9d6a2d71b05994477621efcb9e01f19ca0f93f8bf34c021",
+  "hand_landmarker.task": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+  "features.py": "ef1d122c5c90e44b493f06f97d266c0ab0da0759ccb26624b867a3ae4e2bf222",
+  "model.joblib": "90d42555dd578dfcdb39b46fe59722509df49e1d3d9bac546c041dd93afdb2ac",
+  "common.py": "30bd568b3b108ccacd974ac8a78753548e00c52481d61db61907a6c50bdba8cc",
+  "test_metrics.json": "174de9eea5dc58942e9a0105415a5d7fab59f5de4590b949249441e8ee4fd705",
+  "selected_model.json": "5f2dfb691c84aa8e835bd75396b669b6572b0069913522e3f1b3af691e5ee594",
+  "06_model_decision.json": "c0c132d004b0185a131b422eb56cb2f6345d2eeca2bb5221f1f05dfee2cb347f",
+  "modeling.py": "8d1ccf692dc0e63e8f7a12e804c19d6ad0add22b6a17a9d9871a38719229cec0",
+  "label_schema.csv": "7bc391dc43cf14b6ed6e582aae3cb4bb86d5bfaf882f170d568091087e934daf",
+  "environment.json": "84ed781b60b94f938fb884aef31ef3f9fdc9c6948b68c7509c3e6a8b0b438494",
+  "data.py": "14cfa3bd34f515a626d6c945fdc3df59d48c4ca0309806584b54a8a1a2318d61"
+}

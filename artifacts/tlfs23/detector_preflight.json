@@ -1,0 +1,11 @@
+{
+  "preflight": true,
+  "model": "/Users/sharu/Documents/DBU/tamil-finger-sign-mlops/models/detector/hand_landmarker_v1.task",
+  "model_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+  "config": {
+    "detection_threshold": 0.5,
+    "presence_threshold": 0.5,
+    "retry": false,
+    "max_side": 768
+  }
+}

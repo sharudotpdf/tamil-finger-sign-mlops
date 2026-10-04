@@ -1,0 +1,15 @@
+{
+  "README_02_05.md": "b9a1c0654691adec403105e3de9b8cc5288d65f30e9ac41e03de6ec104318c2a",
+  "docs/METHODIK_02_05.md": "9d222b07898604b21ccfb0061a985c548c80d438471be6ee59c377b033ad0854",
+  "docs/VALIDIERUNG.json": "4dfdcec7957efb842cdebc2987c70ffca15e07a64c2027c5770aaffca4ef2d49",
+  "notebooks/02_data_quality_hash_audit.ipynb": "bb6f04b2216a4e44e41bf9290806f115b16227831feb9196690fe790dd21e578",
+  "notebooks/03_duplicate_resolution_and_curation.ipynb": "c53ca52f605769c3ec60c09917c5767c6e0995229c0fe0a62cee723ce233e39f",
+  "notebooks/04_label_schema_and_split.ipynb": "ccadaf544e21604a530970b11ec0f81e31ec4a31256d0b91e97a1e69be4fcb42",
+  "notebooks/05_landmark_extraction.ipynb": "9c583634355af6ff598f9af8a5664ff1328cc6d47c656dae074e20cccd409520",
+  "requirements_02_05.txt": "80949105f3650d293774bce4da93b623e495d687e24f93628ed7c8bcc844d9b2",
+  "src/tlfs23/__init__.py": "60570c379855024d79d4ec145884b5b59e023b173aeab86cb326a805ddf17661",
+  "src/tlfs23/common.py": "30bd568b3b108ccacd974ac8a78753548e00c52481d61db61907a6c50bdba8cc",
+  "src/tlfs23/data.py": "14cfa3bd34f515a626d6c945fdc3df59d48c4ca0309806584b54a8a1a2318d61",
+  "src/tlfs23/features.py": "ef1d122c5c90e44b493f06f97d266c0ab0da0759ccb26624b867a3ae4e2bf222",
+  "tests/test_tlfs23_data_features.py": "22905448c3b9418d45064a308031499bcfbcef609056575906b2fb2da1d5ac4a"
+}

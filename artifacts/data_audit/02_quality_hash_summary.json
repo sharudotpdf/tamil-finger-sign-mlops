@@ -1,0 +1,10 @@
+{
+  "audit_mode": "full",
+  "n_files_audited": 255158,
+  "n_unreadable_files": 0,
+  "n_files_in_exact_duplicate_groups": 10084,
+  "n_exact_duplicate_hash_groups": 1247,
+  "n_cross_label_duplicate_files": 142,
+  "n_repeated_filenames": 1079,
+  "raw_data_modified": false
+}

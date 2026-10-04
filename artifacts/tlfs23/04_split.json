@@ -1,0 +1,39 @@
+{
+  "config": {
+    "seed": 42,
+    "train": 180,
+    "focus_train": 360,
+    "validation": 50,
+    "test": 50,
+    "background_eval": 100
+  },
+  "exposure_files": [
+    {
+      "path": "data/manifests/labelled_split_manifest.csv",
+      "sha256": "7fd6a7327e1b5f2c6836ae47ec322f6b18faf6b0710b221d24c6f535dfd25697",
+      "n_hashes": 29760
+    },
+    {
+      "path": "data/manifests/tlfs23/review_exposure_00bad0152d4e0c89.csv",
+      "sha256": "ffe3d5d0d41dd1b05210e2c7fdafd8422793d5c135b7121cc7f29ec8a2abf2b8",
+      "n_hashes": 154
+    }
+  ],
+  "exposure_reviewed": true,
+  "no_previous_exposure": false,
+  "split_review": "Das frühere labelled_split_manifest enthält 29.760 bereits verwendete Bilder und wurde vollständig mit dem aktuellen kuratierten Datenbestand abgeglichen. Diese Bilder werden als frühere Datenexposition berücksichtigt. Zusätzlich werden gleiche dHash-Gruppen aus Notebook 03 beim Split zusammengehalten, um sehr ähnliche Aufnahmen nicht über mehrere Splits zu verteilen.",
+  "curation_sha256": "c0d44e990c46824d81547ec4db0057682b8cd3bf9ffd02eb99dd3cc64f993918",
+  "schema_sha256": "eb3ce4b01fec4257d250902f550c73438e95c20d5f2f728d2eccea0e6d8242d6",
+  "groups_sha256": "0a5e922e0104c5c311e76d69e56fe2c0ae286aabeaf2b2a1c4adcf0d362b320d",
+  "split_code_sha256": "14cfa3bd34f515a626d6c945fdc3df59d48c4ca0309806584b54a8a1a2318d61",
+  "limitation": "Gruppentrennung entsprechend den manuell bestaetigten IDs.",
+  "input_fingerprint": "eb0fc9e9ec19a65158f4cd60ac9bd79f1840e02328c97882f8d73d9f7bf623fc",
+  "split_sha256": "67a9cb3a9decd31e3385e7cd38a320ae4ac360b80ae186b45c92df685d6bc2c2",
+  "n_selected": 75300,
+  "n_previously_used_pixels": 29895,
+  "split_counts": {
+    "train": 50400,
+    "test": 12450,
+    "validation": 12450
+  }
+}

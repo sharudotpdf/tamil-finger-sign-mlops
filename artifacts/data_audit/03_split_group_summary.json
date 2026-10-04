@@ -1,0 +1,8 @@
+{
+  "n_model_candidates": 246259,
+  "n_split_groups": 98850,
+  "n_dhash_groups": 49296,
+  "n_images_in_dhash_groups": 196705,
+  "max_group_size": 10,
+  "policy": "same-class equal-dHash images stay in the same split"
+}

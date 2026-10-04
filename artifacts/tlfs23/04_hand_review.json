@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "note": "Die Stichprobe zeigt unterschiedliche Zwei-Hand-Konfigurationen für Uyir, Mei und Uyirmei. FIST bezeichnet dabei eine sichtbare Faust und keinen Detektionsfehler. Ayudha wird als eigene Kategorie behandelt. Background enthält keine festgelegte gültige Tamil-Zeichenkonfiguration.",
+  "split_sha256": "67a9cb3a9decd31e3385e7cd38a320ae4ac360b80ae186b45c92df685d6bc2c2",
+  "convention": "FIST is an inactive component label, not a detector failure; Ayudha separate",
+  "visual_examples": "artifacts/tlfs23/reviews/04_hand_examples.csv",
+  "visual_examples_sha256": "8fe1ee109ab0ca9ef2994805a0f5929b1f358c43ae3b8b12e00783616b8a95d5"
+}

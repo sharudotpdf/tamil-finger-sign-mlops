@@ -1,0 +1,26 @@
+{
+  "audit_mode": "full",
+  "n_inventory_files": 255158,
+  "n_files_audited": 255158,
+  "n_unreadable_files": 0,
+  "n_exact_duplicate_files": 10084,
+  "n_exact_duplicate_groups": 1247,
+  "n_cross_folder_exact_files": 142,
+  "n_repeated_filenames": 1079,
+  "inventory_sha256": "c15d769eaa91e8110c719e91d8074671026d2a9a026e8b5b6b0d559f3825d203",
+  "manifest_sha256": "a4dc87fb970955a3428c5f95797e7422e18a099ec7da9d8ac0a1b24e6e0e9155",
+  "policy": "78ff0c7fcf2614a77232bb5e8a4be7b4fd0a54b623be10351f411b292d68c7a5",
+  "runtime": {
+    "python": "3.12.12",
+    "architecture": "arm64",
+    "system": "Darwin",
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "Pillow": "12.3.0",
+      "mediapipe": "0.10.35",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "raw_data_modified": false
+}

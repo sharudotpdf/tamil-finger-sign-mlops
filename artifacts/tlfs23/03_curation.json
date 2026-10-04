@@ -1,0 +1,15 @@
+{
+  "n_raw_files": 255158,
+  "n_candidates": 246259,
+  "decision_counts": {
+    "KEEP": 245074,
+    "EXCLUDE_EXACT_DUPLICATE": 8757,
+    "KEEP_CANONICAL": 1185,
+    "REVIEW_CROSS_LABEL_DUPLICATE": 142
+  },
+  "audit_sha256": "a4dc87fb970955a3428c5f95797e7422e18a099ec7da9d8ac0a1b24e6e0e9155",
+  "manifest_sha256": "c0d44e990c46824d81547ec4db0057682b8cd3bf9ffd02eb99dd3cc64f993918",
+  "policy": "exact-bytes-and-oriented-RGB; cross-folder-quarantine",
+  "raw_data_modified": false,
+  "split_created": false
+}

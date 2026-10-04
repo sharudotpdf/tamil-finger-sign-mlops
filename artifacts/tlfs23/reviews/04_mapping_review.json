@@ -1,0 +1,6 @@
+{
+  "confirmed": true,
+  "evidence": "Alle 248 Dataset-Ordner wurden mit der offiziellen TLFS23-Ordner-zu-Zeichen-Zuordnung abgeglichen. Zusätzlich wurden Beispielbilder der Ordner visuell auf Plausibilität geprüft.",
+  "schema_sha256": "eb3ce4b01fec4257d250902f550c73438e95c20d5f2f728d2eccea0e6d8242d6",
+  "scope": "Quellenabgleich aller verwendeten Labels; Bilder nur als Sichtprobe"
+}

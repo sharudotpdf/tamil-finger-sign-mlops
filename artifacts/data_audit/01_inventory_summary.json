@@ -1,0 +1,26 @@
+{
+  "dataset_name": "TLFS23",
+  "dataset_version": 2,
+  "source": "Mendeley Data",
+  "doi": "10.17632/39kzs5pxmk.2",
+  "source_url": "https://data.mendeley.com/datasets/39kzs5pxmk/2",
+  "license": "CC BY 4.0",
+  "dataset_root": "/Users/sharu/Documents/DBU/tamil-finger-sign-mlops/data/raw/TLFS23 - Tamil Language Finger Spelling Image Dataset 2",
+  "class_root": "/Users/sharu/Documents/DBU/tamil-finger-sign-mlops/data/raw/TLFS23 - Tamil Language Finger Spelling Image Dataset 2/Dataset Folders",
+  "class_root_relative": "data/raw/TLFS23 - Tamil Language Finger Spelling Image Dataset 2/Dataset Folders",
+  "reported_n_class_folders": 248,
+  "reported_n_images": 255155,
+  "n_class_folders": 248,
+  "n_images": 255158,
+  "image_extensions": [
+    ".bmp",
+    ".jpeg",
+    ".jpg",
+    ".png",
+    ".tif",
+    ".tiff",
+    ".webp"
+  ],
+  "other_files": [],
+  "raw_data_modified": false
+}

@@ -1,0 +1,100 @@
+# --------------------------------------------------
+# Python
+# --------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# --------------------------------------------------
+# macOS / editor
+# --------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+
+# --------------------------------------------------
+# Jupyter
+# --------------------------------------------------
+.ipynb_checkpoints/
+
+# --------------------------------------------------
+# Tests / tooling
+# --------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --------------------------------------------------
+# Secrets / local configuration
+# --------------------------------------------------
+.env
+.env.*
+kaggle.json
+
+# --------------------------------------------------
+# Raw dataset and temporary data
+# --------------------------------------------------
+data/raw/
+data/cache/
+data/tmp/
+
+# Keep reproducibility manifests:
+# data/manifests/ is intentionally NOT ignored
+
+# --------------------------------------------------
+# Large / temporary feature extraction artifacts
+# --------------------------------------------------
+artifacts/tlfs23/feature_runs/
+artifacts/tlfs23/runtime/
+artifacts/ml_pipeline/
+
+# Temporary audit caches
+*.sqlite
+*.sqlite3
+*.db
+
+# --------------------------------------------------
+# MLflow local stores
+# --------------------------------------------------
+mlruns/
+mlartifacts/
+
+# --------------------------------------------------
+# Logs / temporary files
+# --------------------------------------------------
+*.log
+*.tmp
+*.temp
+
+# --------------------------------------------------
+# Large model formats
+# --------------------------------------------------
+models/*.keras
+models/*.h5
+models/*.pkl
+
+# Do NOT globally ignore *.joblib:
+# the final exported model may be required for the local demo.
+
+# --------------------------------------------------
+# Python packaging
+# --------------------------------------------------
+build/
+dist/
+*.egg-info/
+
+# Local audit / database caches
+*.sqlite
+*.sqlite3
+*.db
+
+# Generated experiment runs / MLflow artifacts
+artifacts/tlfs23/modeling/experiments/
+artifacts/tlfs23/modeling/mlflow_artifacts/
+
+# Generated visual review HTML
+artifacts/tlfs23/reviews/*.html

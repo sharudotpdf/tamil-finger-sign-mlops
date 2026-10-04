@@ -1,0 +1,33 @@
+{
+  "task": "Visuelle Review-Erweiterung der gelieferten Notebooks 03 und 04",
+  "tests": {
+    "new_visual_review_tests": 19,
+    "existing_regression_tests": 44,
+    "passed_total": 63,
+    "failed": 0
+  },
+  "integration": "Notebooks 02-05 sequentiell; echte synthetische Bilddateien, native MediaPipe-Ausgaben simuliert",
+  "visual_check": "HTML-Galerie mit Tamil-Labels in Chromium gerendert und gesichtet",
+  "environment": {
+    "python": "3.13.5",
+    "os": "Linux",
+    "architecture": "x86_64"
+  },
+  "not_tested": [
+    "Lokale Rohbilder des Nutzers",
+    "Fachliche Korrektheit der Ordner-Zeichen-Zuordnung",
+    "Native MediaPipe-Inferenz auf macOS",
+    "VS-Code-spezifisches HTML-Rendering"
+  ],
+  "preserved": [
+    "Curation-Regeln",
+    "Trainingsumfang",
+    "bestehende data.py/common.py/features.py",
+    "Schnittstelle zu Notebook 05"
+  ],
+  "limitations": [
+    "dHash-Paare nur bei gleichem dHash innerhalb eines Ordners; keine positive Hamming-Suche",
+    "Sichtproben ersetzen keine vollstaendige Referenzpruefung aller Ordnerlabels",
+    "Erfasste Anzeige ist kein automatischer Nachweis menschlicher Begutachtung"
+  ]
+}

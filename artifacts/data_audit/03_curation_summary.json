@@ -1,0 +1,15 @@
+{
+  "n_raw_files": 255158,
+  "n_model_candidates_after_technical_curation": 246259,
+  "n_excluded_or_review": 8899,
+  "n_duplicate_groups": 1247,
+  "n_cross_label_duplicate_groups": 62,
+  "decision_counts": {
+    "KEEP": 245074,
+    "EXCLUDE_EXACT_DUPLICATE": 8757,
+    "KEEP_CANONICAL": 1185,
+    "REVIEW_CROSS_LABEL_DUPLICATE": 142
+  },
+  "raw_data_modified": false,
+  "split_created": false
+}

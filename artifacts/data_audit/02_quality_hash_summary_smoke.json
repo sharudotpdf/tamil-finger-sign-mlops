@@ -1,0 +1,10 @@
+{
+  "audit_mode": "smoke",
+  "n_files_audited": 1240,
+  "n_unreadable_files": 0,
+  "n_files_in_exact_duplicate_groups": 0,
+  "n_exact_duplicate_hash_groups": 0,
+  "n_cross_label_duplicate_files": 0,
+  "n_repeated_filenames": 5,
+  "raw_data_modified": false
+}

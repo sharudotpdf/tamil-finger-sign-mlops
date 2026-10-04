@@ -1,9 +1,0 @@
-# Bereits passende Pakete werden nicht absichtlich aktualisiert.
-# Fuer eine endgueltige Umgebung zusaetzlich den getesteten Paketstand festhalten.
-numpy>=1.26,<3
-pandas>=2,<4
-Pillow>=10,<13
-matplotlib>=3.8,<4
-mediapipe==0.10.35
-pytest>=8,<10
-nbformat>=5.9,<6

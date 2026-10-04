@@ -32,7 +32,6 @@ Die zentralen Python-Abhängigkeiten sind in `requirements.txt` aufgeführt.
 
 Die im Projekt verwendete MediaPipe-Version ist auf `0.10.35` festgelegt.
 
-Ein vollständiger Snapshot der lokalen Entwicklungsumgebung liegt zusätzlich in `requirements-macos-snapshot.txt`. Dieser Snapshot dient als Referenz des Entwicklungsrechners und ist kein plattformübergreifendes Lockfile.
 
 ---
 
@@ -71,25 +70,35 @@ Für die Ausführung der Notebooks in VS Code muss als Kernel die Python-Umgebun
 
 ## Datensatz
 
-Die Rohdaten werden nicht im Git-Repository versioniert.
+Für das Projekt wird der Datensatz **TLFS23 – Tamil Language Finger Spelling Image Dataset, Version 2** verwendet.
 
-Verwendet wird der TLFS23-Datensatz in der Projektstruktur unter:
+Die Rohdaten werden aufgrund ihrer Größe nicht im Git-Repository versioniert und müssen separat über Mendeley Data heruntergeladen werden:
+
+[TLFS23 auf Mendeley Data](https://data.mendeley.com/datasets/39kzs5pxmk/2)
+
+DOI: `10.17632/39kzs5pxmk.2`
+
+Der Datensatz wird lokal standardmäßig unter folgendem Pfad erwartet:
 
 ```text
 data/raw/TLFS23 - Tamil Language Finger Spelling Image Dataset 2/Dataset Folders/
-```
-
-Falls der Datensatz an einem anderen Ort liegt, kann der Klassenordner über die Umgebungsvariable `TLFS23_CLASS_ROOT` angegeben werden.
-
-Beispiel:
-
-```bash
-export TLFS23_CLASS_ROOT="/pfad/zum/Dataset Folders"
-```
-
-Die erzeugten Manifeste enthalten relative Pfade und reproduzierbare Prüf- bzw. Splitinformationen. Rohbilder selbst bleiben außerhalb von Git.
-
 ---
+
+### Lizenz und Quellenangabe
+
+Der verwendete Datensatz **TLFS23 – Tamil Language Finger Spelling Image Dataset, Version 2** wurde über Mendeley Data veröffentlicht und steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+**Quelle:**
+
+Chirranjeavi M, Bavesh Ram S, Gokulraj Varatharajan, Aaruran Sundaresh, Binoy Nair, Harikumar M E (2023):  
+*TLFS23 – Tamil Language Finger Spelling Image Dataset*, Version 2, Mendeley Data.  
+DOI: `10.17632/39kzs5pxmk.2`
+
+**Lizenz:**
+
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+Die zugrunde liegenden Bilddaten sind nicht Bestandteil dieses Repositories. Die im Projekt erzeugten Manifeste, Features und Modellartefakte basieren auf einer lokal heruntergeladenen Kopie des Datensatzes.
 
 ## Datenverarbeitung ausführen
 
@@ -304,8 +313,7 @@ requirements.txt           direkte Projektabhängigkeiten
 
 ## Hinweise zur Abgabe
 
-Für die LMS-Abgabe sollte das vollständige Repository als ZIP bereitgestellt werden.
+Für die LMS-Abgabe wurde eine ZIP bereitgestellt.
 
-Die Rohdaten können wegen ihrer Größe ausgelassen werden, sofern in dieser README eindeutig beschrieben ist, wo sie bezogen und an welcher Stelle sie abgelegt werden müssen.
 
-Bewertungsrelevante Konfigurationen, Manifeste, Tests, Quellcode, finale Evaluationsergebnisse und der benötigte Modell-Export sollten Bestandteil der Abgabe bleiben.
+Bewertungsrelevante Konfigurationen, Manifeste, Tests, Quellcode, finale Evaluationsergebnisse und der benötigte Modell-Export sind als Bestandteil der Abgabe geblieben.

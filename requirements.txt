@@ -1,7 +1,6 @@
 # Zentrale Projektabhaengigkeiten fuer den TLFS23-MLOps-Prototypen.
 # Getestete Zielumgebung: Python 3.12.
-# Der vollstaendige lokale Paketstand bleibt zusaetzlich in
-# requirements-macos-snapshot.txt dokumentiert.
+
 
 numpy>=1.26,<3
 pandas>=2,<4

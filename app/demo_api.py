@@ -484,7 +484,7 @@ runButton.addEventListener('click', async () => {
 
     const label = data.predicted_label || {};
     const finalSign = data.outcome === 'accepted_sign' ? data.predicted_character : '–';
-    const rawSign = (data.raw_character && !['__REJECT__', '__background__'].includes(data.raw_character))
+    const rawSign = (data.raw_character && !['__reject__', '__background__'].includes(data.raw_character))
       ? data.raw_character
       : (data.raw_character === '__background__' ? 'Background' : '–');
 

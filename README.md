@@ -82,23 +82,10 @@ Der Datensatz wird lokal standardmäßig unter folgendem Pfad erwartet:
 
 ```text
 data/raw/TLFS23 - Tamil Language Finger Spelling Image Dataset 2/Dataset Folders/
+```
 ---
 
-### Lizenz und Quellenangabe
 
-Der verwendete Datensatz **TLFS23 – Tamil Language Finger Spelling Image Dataset, Version 2** wurde über Mendeley Data veröffentlicht und steht unter der Lizenz **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-
-**Quelle:**
-
-Chirranjeavi M, Bavesh Ram S, Gokulraj Varatharajan, Aaruran Sundaresh, Binoy Nair, Harikumar M E (2023):  
-*TLFS23 – Tamil Language Finger Spelling Image Dataset*, Version 2, Mendeley Data.  
-DOI: `10.17632/39kzs5pxmk.2`
-
-**Lizenz:**
-
-[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
-
-Die zugrunde liegenden Bilddaten sind nicht Bestandteil dieses Repositories. Die im Projekt erzeugten Manifeste, Features und Modellartefakte basieren auf einer lokal heruntergeladenen Kopie des Datensatzes.
 
 ## Datenverarbeitung ausführen
 
@@ -126,6 +113,25 @@ models/export/
 ```
 
 Temporäre Caches und große reproduzierbare Zwischenartefakte werden über `.gitignore` ausgeschlossen.
+
+Die Notebooks bilden die ursprüngliche Ausführungsreihenfolge der ML-Pipeline ab.
+
+Solange der finale Testsplit noch nicht geöffnet wurde, werden die definierten Modelle auf Trainings- und Validierungsdaten verglichen und die Experimente mit MLflow protokolliert. Die Modell- und Threshold-Auswahl erfolgt ausschließlich anhand der Validierungsdaten.
+
+Nach dem ersten Zugriff auf den finalen Testsplit wird kein erneutes Training oder Tuning mehr zugelassen. Dadurch soll verhindert werden, dass die Modellentscheidung nachträglich an die Holdout-Ergebnisse angepasst wird. Bei späteren Ausführungen werden ausschließlich die bereits gespeicherten Validierungsergebnisse und Modellentscheidungen verwendet.
+
+Der finale Testzugriff wird über `artifacts/tlfs23/07_test_access_lock.json` dokumentiert.
+
+### Hinweis zur Datenhistorie
+
+Die Datei `data/manifests/labelled_split_manifest.csv` stammt aus einer früheren Entwicklungsphase des Projekts. Sie wird nicht als aktueller Train-/Validation-/Test-Split verwendet, sondern ausschließlich als historischer Expositionsnachweis.
+
+Damit wird dokumentiert, welche Bilddaten bereits vor der Erstellung des finalen Splits im Entwicklungsprozess verwendet oder betrachtet wurden. Diese Datenhistorie wird bei der Split-Erstellung berücksichtigt, damit bereits verwendete Bildinhalte nicht nachträglich als unberührte Validierungs- oder Testdaten behandelt werden.
+
+Das aktuell eingefrorene Train-/Validation-/Test-Splitting befindet sich unter:
+
+```text
+data/manifests/tlfs23/split_manifest.csv
 
 ---
 
@@ -214,6 +220,7 @@ Wichtige Endpunkte:
 Für `/predict` kann ein JPG-, PNG- oder WebP-Bild hochgeladen werden.
 
 Referenzbilder werden ausschließlich aus dem Trainingssplit ausgewählt. Der Holdout-Testsplit wird nicht für die Demo verwendet.
+Für den Endpunkt `/reference-image` müssen die TLFS23-Rohdaten lokal vorhanden sein. Die eigentliche Bildklassifikation über `/predict` verwendet den exportierten Modellstand.
 
 ---
 
@@ -313,7 +320,8 @@ requirements.txt           direkte Projektabhängigkeiten
 
 ## Hinweise zur Abgabe
 
-Für die LMS-Abgabe wurde eine ZIP bereitgestellt.
+Für die LMS-Abgabe wird das vollständige Repository als ZIP eingereicht.
 
+Die TLFS23-Rohdaten sind aufgrund ihrer Größe nicht Bestandteil der ZIP. Bezugsquelle und erwartete lokale Verzeichnisstruktur sind in dieser README dokumentiert.
 
-Bewertungsrelevante Konfigurationen, Manifeste, Tests, Quellcode, finale Evaluationsergebnisse und der benötigte Modell-Export sind als Bestandteil der Abgabe geblieben.
+Bewertungsrelevante Konfigurationen, Manifeste, Tests, Quellcode, finale Evaluationsergebnisse und der benötigte Modell-Export sind Bestandteil der Abgabe.

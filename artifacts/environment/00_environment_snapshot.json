@@ -18,8 +18,8 @@
     "matplotlib": "3.11.2"
   },
   "git": {
-    "commit": null,
+    "commit": "ce2d6551364ba73af8b6f67c1ab171e83dae90e3",
     "branch": "main",
-    "dirty": true
+    "dirty": false
   }
 }
